@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversor de divisas</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="css/styles.css?v=1.6" rel="stylesheet">
+    <link href="css/queries.css?v=1.6" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <a href="#" class="nav_slide_button"><i class="fa fa-navicon fa-2x"></i></a>
+                </div>
+            </div>
+            <nav class="pull">
+                <ul class="top-nav">
+                  <li><a href="#hero">Home <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#conversor">Conversor de divisas<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    <li><a href="#chart">Evolución del dólar<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    <li><a href="#productos">Talleres<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div id="mainPart" class="col-md-8 col-md-offset-2 text-center">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5 text-center">
+                    <a href="#conversor" class="hero-play-btn various fancybox.iframe">Play Button</a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mainButtn" class="col-md-6 col-md-offset-3 text-center">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="download-now" id="getstarted">
+        <div class="container">
+            <div class="row">
+                <div id="conversor" class="col-md-8">
+                    <h2 class="my-class" id="myTitle">Conversión pesos argentinos - divisas regionales (dólar americano, real brasilero y guaraní paraguayo)</h2>
+                    <h2 class="my-class" id="myTitle">Funciones relacionadas</h2>
+                    <h2 class="my-class" id="myTitle">Calcular valor de la divisa seleccionada</h2>
+                    <form id="formConsulta">
+                        <label for="divisa">Divisa:</label>
+                        <input type="text" id="divisa" name="divisa" placeholder="dólar, real, guaraní">
+                        <label for="monto">Monto en pesos argentinos:</label>
+                        <input type="number" id="monto" name="monto">
+                        <div class="button-container">
+                            <button type="button" id="btnConsultarDivisas" class="download-btn">Consultar</button>
+                            <button type="button" id="btnLimpiarConsultas" class="download-btn">Limpiar Consultas</button>
+                        </div>
+                    </form>
+                    <div id="resultados"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials" id="media">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div id="firstSlider">
+                        <div id="chart"></div>
+                        <script src="js/chart.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="productos" style="background-color: white; padding: 50px 0;">
+        <div class="container">
+            <div class="row text-center">
+                <h2>Talleres de Capacitación</h2>
+                <div id="productosContainer" class="product-grid">
+                    <!-- Productos serán cargados aquí -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="badge-btn">Badge Button</a>
+                    <p class="footer-credit">Design by <a href="#">Agustin Staudt</a></p></div>
+                <div class="col-md-2 col-md-offset-3">
+                    <ul class="footer-nav">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#conversor">Conversor de divisas</a></li>
+                        <li><a href="#chart">Evolución del dólar</a></li>
+                        <li><a href="#productos">Talleres</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- DOM -->
+    <script src="js/dom.js"></script>
+    <script src="js/conversor.js"></script>
+    <script src="js/talleres.js"></script> <!-- Añadir esta línea -->
+</body>
+</html>
