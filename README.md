@@ -1,3 +1,7 @@
+# Entrega final curso introductorio a Javascript
+
+La presente entrega representa la culminación del curso de Javascript de Coderhouse. Para realizar dicho trabajo, el punto de partida fue la utilización de un template de Bootstrap, con las modificaciones necesarias para que el mismo cumpla las condiciones exigidas en la consigna. Entre dichas modificaciones, se partió de la eliminación total de los archivos .js generados por el template. Dicho template utilizado se llama Starnight, y cuya descripción se muestra a continuación.
+
 # "Starnight" One Page Website Template
 
 "Starnight" is a one page website template made by [Peter Finlan](http://peterfinlan.com/).
